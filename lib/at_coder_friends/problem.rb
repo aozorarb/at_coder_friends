@@ -137,6 +137,8 @@ module AtCoderFriends
     end
 
     def add_src(ext, txt)
+      # The contents of the source code were removed according to "https://info.atcoder.jp/entry/llm-abc-rules-ja".
+      txt.clear
       @sources << SourceCode.new(ext, txt)
     end
   end
